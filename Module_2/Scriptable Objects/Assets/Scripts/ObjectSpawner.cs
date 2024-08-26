@@ -18,6 +18,6 @@ public class ObjectSpawner : MonoBehaviour
         
         spawnPosition.position = randomPosition;
         
-        Instantiate(objectToSpawn, spawnPosition, Quaternion.identity);
+        Instantiate(objectToSpawn, spawnPosition.position, Quaternion.identity);
     }
 }
