@@ -13,18 +13,3 @@ MonoBehaviour:
   m_Name: HighScore
   m_EditorClassIdentifier: 
   value: 0
-  disableEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000}
-        m_TargetAssemblyTypeName: IntData, Assembly-CSharp
-        m_MethodName: SetValue
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 726bd913269bf394ab13026d9aa46d1b, type: 2}
-          m_ObjectArgumentAssemblyTypeName: IntData, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
