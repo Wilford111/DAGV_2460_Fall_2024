@@ -1,14 +1,27 @@
 using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.Events;
 using UnityEngine;
 
 public class CoroutineBehavior : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public UnityEvent repeatEvent;
+    
+    public int counterNum = 3;
+    public float seconds = 3.0f;
+    private WaitForSeconds wfsObj;
+    private WaitForFixedUpdate wffuObj;
+    
     IEnumerator Start()
     {
-        Debug.Log("Start");
-        yield return new WaitForSeconds(3);
-        Debug.Log("Late Start");
+        wfsObj = new WaitForSeconds(seconds);
+        wffuObj = new WaitForFixedUpdate();
+
+        while (counterNum > 0)
+        {
+            yield return wfsObj;
+            repeatEvent.Invoke();
+            counterNum--;
+            Debug.Log(counterNum);
+        }
     }
 }
