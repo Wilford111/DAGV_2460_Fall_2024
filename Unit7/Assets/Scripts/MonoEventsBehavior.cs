@@ -6,7 +6,7 @@ public class MonoEventsBehavior : MonoBehaviour
 {
     public UnityEvent startEvent, awakeEvent, disableEvent;
 
-    private void Awake()
+    public void Awake()
     {
         awakeEvent.Invoke();
     }
