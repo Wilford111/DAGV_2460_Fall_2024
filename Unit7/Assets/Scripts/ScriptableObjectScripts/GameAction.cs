@@ -17,4 +17,9 @@ public class GameAction : ScriptableObject
     {
         Raise?.Invoke(obj);
     }
+
+    public void RaiseAction(Transform obj)
+    {
+        Raise?.Invoke(obj);
+    }
 }

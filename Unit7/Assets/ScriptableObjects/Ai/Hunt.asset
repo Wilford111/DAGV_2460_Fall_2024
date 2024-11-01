@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3.5
   angularSpeed: 120
-  destinationAction: {fileID: 11400000, guid: f8608d91cb0a27842a8dd3f934e7e596, type: 2}
+  destinationAction: {fileID: 11400000, guid: 652c09437e714714eb7b6c0c9e2f4ad4, type: 2}
   destination: {fileID: 0}
